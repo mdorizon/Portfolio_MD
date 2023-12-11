@@ -1,1 +1,21 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --color-primary: #5260FF;
+  --color-secondary: #939BF6;
+  --color-tag: #B4ECD1;
+  --color-tag-text: #165537;
+  --color-background: #23272A;
+  --color-grey-primary: #2A2E31;
+  --color-grey-secondary: #393C3F;
+  --color-light: #F9FAFA;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}/*# sourceMappingURL=style.css.map */
