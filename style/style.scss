@@ -24,11 +24,18 @@ a {
   all: unset;
   cursor: pointer;
 }
-.mail-copy {
+.text-copy {
   cursor: pointer;
   transition: 0.5s all;
 }
-.mail-copy:hover {
+.text-copy:hover {
+  opacity: 0.8;
+}
+.tel-hover {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.tel-hover:hover {
   opacity: 0.8;
 }
 // RESET END
