@@ -54,6 +54,10 @@ body {
   background-color: var(--color-background);
   font-family: Poppins;
   color: var(--color-light);
+  gap: 128px;
+}
+main {
+  gap: 128px;
 }
 a {
   all: unset;
@@ -262,3 +266,26 @@ a {
     }
   }
 // HEADER END
+
+
+// WHOAMI 
+.whoami-section {
+  gap: 96px;
+}
+.whoami-text {
+  max-width: 1200px;
+  gap: 24px;
+  text-align: center;
+  h3 {
+    color: var(--secondary, #939BF6);
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+}
+// WHOAMI END
