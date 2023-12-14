@@ -76,6 +76,10 @@ a {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .align-center {
   align-items: center;
 }
@@ -324,11 +328,60 @@ a {
 .skills-cards .skill-content {
   gap: 16px;
 }
+.skills-cards .skill-content h3 {
+  opacity: 0.8;
+}
 .skills-cards .skill-content hr {
   margin: 0;
+  opacity: 0.6;
   width: 100%;
 }
 .skills-cards .skill-content ul {
   margin: 0;
+  opacity: 0.6;
   padding-left: 17px;
+}
+
+footer {
+  gap: 96px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  gap: 24px;
+  padding-top: 32px;
+}
+.contact-container h3 {
+  color: var(--secondary, #939BF6);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+}
+.contact-container h1 {
+  text-align: center;
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-links {
+  background: var(--color-grey-primary);
+  padding: 32px 64px;
+}
+.footer-links .footer-container {
+  max-width: 1200px;
+  width: 100%;
+}
+.footer-links .footer-container .nav-items {
+  padding: 22px 0px;
+  gap: 22px;
+}
+.footer-links .infos {
+  gap: 16px;
+}
+.footer-links .infos p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer-links .social-buttons {
+  padding-top: 32px;
 }/*# sourceMappingURL=style.css.map */
