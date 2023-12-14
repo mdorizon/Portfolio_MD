@@ -301,4 +301,34 @@ a {
   font-weight: 400;
   line-height: 26px;
   opacity: 0.8;
+}
+
+.skills-container {
+  max-width: 1200px;
+  width: 100%;
+  gap: 24px;
+}
+.skills-container .skills-title {
+  color: var(--secondary, #939BF6);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+}
+
+.skills-cards {
+  gap: 24px;
+  width: 100%;
+}
+.skills-cards .skill-card {
+  width: 100%;
+}
+.skills-cards .skill-content {
+  gap: 16px;
+}
+.skills-cards .skill-content hr {
+  margin: 0;
+  width: 100%;
+}
+.skills-cards .skill-content ul {
+  margin: 0;
+  padding-left: 17px;
 }/*# sourceMappingURL=style.css.map */

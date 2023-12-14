@@ -289,3 +289,39 @@ a {
   }
 }
 // WHOAMI END
+
+
+// PROJECT
+// PROJECT END
+
+
+// SKILLS
+  .skills-container {
+    max-width: 1200px;
+    width: 100%;
+    gap: 24px;
+    .skills-title {
+      color: var(--secondary, #939BF6);
+      font-size: var(--font-size-h3);
+      font-weight: 700;
+    }
+  }
+  .skills-cards {
+    gap: 24px;
+    width: 100%;
+    .skill-card {
+      width: 100%;
+    }
+    .skill-content {
+      gap: 16px;
+      hr {
+        margin: 0;
+        width: 100%;
+      }
+      ul {
+        margin: 0;
+        padding-left: 17px;
+      }
+    }
+  }
+// SKILLS END
