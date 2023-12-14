@@ -24,4 +24,11 @@ a {
   all: unset;
   cursor: pointer;
 }
+.mail-copy {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.mail-copy:hover {
+  opacity: 0.8;
+}
 // RESET END

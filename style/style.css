@@ -332,7 +332,6 @@ footer {
   text-align: center;
   font-size: var(--font-size-h1);
   font-weight: 700;
-  text-decoration: underline;
 }
 
 .footer-links {
@@ -384,4 +383,13 @@ main {
 a {
   all: unset;
   cursor: pointer;
+}
+
+.mail-copy {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.mail-copy:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
