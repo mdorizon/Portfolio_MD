@@ -108,7 +108,7 @@
 .logo-figma {
   bottom: 39px;
   left: -10px;
-  animation: floatFigma 3s ease-in-out infinite alternate;
+  animation: floatFigma 2s ease-in-out infinite alternate;
 }
 
 .logo-tailwind {
@@ -120,7 +120,7 @@
 .logo-sass {
   top: -34px;
   right: 82px;
-  animation: floatSass 3s ease-in-out infinite alternate;
+  animation: floatSass 2.5s ease-in-out infinite alternate;
 }
 
 .logo-vscode {
