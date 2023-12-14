@@ -39,3 +39,13 @@ a {
   opacity: 0.8;
 }
 // RESET END
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey-secondary); 
+}

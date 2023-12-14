@@ -24,7 +24,7 @@
           <div class="header-text flex flex-dir-col">
             <div class="title-container">
               <h2>Hey, je suis Maxence DORIZON</h2>
-              <h1>Développeur frontend</h1>
+              <h1>Développeur front-end</h1>
             </div>
             <p>Bienvenue sur mon portfolio ! Je suis Maxence Dorizon, un passionné de 19 ans en première année de développement web à l'École Supérieure du Digital (ESD) de Bordeaux. Explorez mon portfolio pour découvrir mon parcours et mes projets.</p>
           </div>
@@ -79,52 +79,56 @@
         <p>👋 Salut ! Je suis Maxence Dorizon, un jeune passionné par l'informatique (Hardware comme Software). Actuellement en première année de Bachelor à l'École Supérieure du Digital (ESD) à Bordeaux, je m'immerge avec enthousiasme dans l'univers du développement et de la création numérique. 💻🚀<br/><br/>En dehors des cours, je suis fier de gérer mon propre serveur Minecraft. Cette aventure va bien au-delà du jeu, me permettant d'explorer Linux, de renforcer mes compétences en sécurité informatique, de plonger dans les mystères de Java et MySQL. Une expérience immersive qui allie passion et apprentissage concret. 🕹️🔐<br/><br/>Curieux de nature, je suis constamment à la recherche de nouvelles opportunités pour élargir mes compétences et contribuer de manière significative au monde numérique en constante évolution. 🌐🚀</p>
       </div>
     </section>
-    <section class="projects-section" id="projects">
-      <div class="cards-container">
-        <div class="sort-buttons">
-          <div class="sort-button">
+    <section class="projects-section flex flex-dir-col align-center" id="projects">
+      <div class="cards-container flex flex-dir-col align-start">
+        <div class="sort-buttons flex align-start">
+          <div class="sort-button flex justify-center align-center active">
             <p>tout les projets</p>
           </div>
-          <div class="sort-button">
+          <div class="sort-button flex justify-center align-center">
             <p>intégration</p>
           </div>
-          <div class="sort-button">
+          <div class="sort-button flex justify-center align-center">
             <p>webdesign</p>
           </div>
         </div>
         <div class="cards">
-          <div class="card">
-            <img src="./src/images/Frame 4.png" alt="card-test">
-            <div class="card-content">
-              <div class="card-title-container">
-                <h3>Landing Page d’une micro entreprise</h3>
+          <div class="card card-1 flex flex-dir-col" id="foodies">
+            <img class="card-image" src="./src/images/Frame 4.png" alt="card-test">
+            <div class="card-content flex flex-dir-col align-start">
+              <div class="card-title-container flex flex-dir-col">
+                <h3>Landing page foodies entrainement</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi nunc, volutpat et aliquam et, rutrum ac neque. Fusce mattis dui eget feugiat pulvinar.</p>
               </div>
-              <div class="card-skills-container">
-                <div class="html-skill">
-                  <div class="skill-content">
-                    <i class="ti ti-brand-html5"></i>
+              <div class="card-skills-container flex align-start">
+                <div class="html-skill skill flex">
+                  <div class="skill-content flex align-center">
+                    <img src="./src/icons/html-icon.svg">
                     <p>HTML</p>
                   </div>
                 </div>
-                <div class="css-skill">
-                  <div class="skill-content">
-                    <i class="ti ti-brand-css3"></i>
+                <div class="css-skill skill flex">
+                  <div class="skill-content flex align-center">
+                    <img src="./src/icons/css-icon.svg">
                     <p>CSS</p>
                   </div>
                 </div>
               </div>
               <hr>
-              <div class="card-links-container">
-                <div class="project-button">
-                  <i class="ti ti-brand-github"></i>
-                </div>
-                <div class="more-button">
-                  <p>Voir plus</p>
-                </div>
+              <div class="card-links-container flex justify-between align-center">
+                <a href="https://github.com/mdorizon/foodies-landing-training" target="_blank">
+                  <div class="project-button flex justify-center align-center">
+                    <img src="./src/icons/github-icon.svg">
+                  </div>
+                </a>
+                <a href="https://foodies.mdorizon.fr/" target="_blank">
+                  <div class="more-button flex justify-center align-center">
+                    <p>Voir plus</p>
+                  </div>
+                </a>
               </div>
             </div>
-            <div class="category-tag">
+            <div class="category-tag flex align-start">
               <p>Intégration</p>
             </div>
           </div>
