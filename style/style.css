@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
 :root {
   --color-primary: #5260FF;
   --color-secondary: #939BF6;
@@ -40,56 +64,13 @@
   --space-sectionSmallMaxWidth: 1200px;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.header-content {
+  padding: var(--space-13xl) 0px;
 }
 
-h1, h2, h3, p, a {
-  margin: 0;
-}
-
-body {
-  background-color: var(--color-background);
-  font-family: Poppins;
-  color: var(--color-light);
-  gap: 128px;
-}
-
-main {
-  gap: 128px;
-}
-
-a {
-  all: unset;
-  cursor: pointer;
-}
-
-.flex {
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-start {
-  align-items: start;
-}
-
-.flex-dir-col {
-  flex-direction: column;
+.container {
+  max-width: var(--space-sectionSmallMaxWidth);
+  gap: var(--space-13xl);
 }
 
 .nav-items {
@@ -99,15 +80,6 @@ a {
 .nav-items a {
   font-size: var(--font-size-text);
   font-weight: 600;
-}
-
-.header-content {
-  padding: var(--space-13xl) 0px;
-}
-
-.container {
-  max-width: var(--space-sectionSmallMaxWidth);
-  gap: var(--space-13xl);
 }
 
 .header-logo {
@@ -242,7 +214,7 @@ a {
   border-radius: 16px;
   padding: 20px 30px;
   cursor: pointer;
-  background: var(--primary, #5260FF);
+  background: var(--color-primary);
 }
 .header-buttons .contact-me-button p {
   font-size: var(--font-size-button);
@@ -277,7 +249,7 @@ a {
   width: 45px;
   height: 45px;
   border-radius: 26px;
-  border: 2.5px solid var(--light, #F9FAFA);
+  border: 2.5px solid var(--color-light);
 }
 .buttons img {
   width: 22px;
@@ -296,7 +268,7 @@ a {
   text-align: center;
 }
 .whoami-text h3 {
-  color: var(--secondary, #939BF6);
+  color: var(--color-secondary);
   font-size: var(--font-size-h3);
   font-weight: 700;
 }
@@ -313,7 +285,7 @@ a {
   gap: 24px;
 }
 .skills-container .skills-title {
-  color: var(--secondary, #939BF6);
+  color: var(--color-secondary);
   font-size: var(--font-size-h3);
   font-weight: 700;
 }
@@ -352,7 +324,7 @@ footer {
   padding-top: 32px;
 }
 .contact-container h3 {
-  color: var(--secondary, #939BF6);
+  color: var(--color-secondary);
   font-size: var(--font-size-h3);
   font-weight: 700;
 }
@@ -384,4 +356,32 @@ footer {
 }
 .footer-links .social-buttons {
   padding-top: 32px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, a {
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: Poppins;
+  color: var(--color-light);
+  gap: 128px;
+}
+
+main {
+  gap: 128px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
