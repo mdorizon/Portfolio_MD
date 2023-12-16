@@ -26,6 +26,12 @@ footer {
       padding: 22px 0px;
       gap: 22px;
     }
+    .nav-items a {
+      transition: all 0.3s ease-out;
+    }
+    .nav-items a:hover {
+      opacity: 0.6;
+    }
   }
   .infos {
     gap: 16px;

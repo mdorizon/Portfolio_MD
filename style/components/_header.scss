@@ -12,6 +12,25 @@
     font-size: var(--font-size-text);
     font-weight: 600;
   }
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-light);
+    transition: 0.3s all ease-in-out;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  a:hover {
+    p:after {
+      width: 100%;
+    }
+  }
 }
 .header-logo {
   width: 400px;
@@ -133,10 +152,14 @@
     padding: 20px 30px;
     cursor: pointer;
     background: var(--color-primary);
+    transition: 0.3s all ease-in-out;
     p {
       font-size: var(--font-size-button);
       font-weight: 600;
     }
+  }
+  .contact-me-button:hover {
+    background: hsl(235, 98%, 69%);
   }
   .cv-download {
     padding: 20px 30px;
@@ -145,18 +168,35 @@
     p {
       font-size: var(--font-size-button);
       font-weight: 600;
+      transition: all 0.3s ease-in-out;
     }
     i {
       font-size: 18px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .cv-download:hover {
+    p, i {
+      opacity: 0.6;
     }
   }
 }
 .social-buttons {
-  gap: 40px;
+  gap: 32px;
 }
 .arrow {
   width: 16px;
   height: 38px;
+  transition: 0.3s all ease-out;
+  animation: arrow 1s ease-in-out infinite alternate;
+}
+@keyframes arrow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
 }
 .buttons {
   gap: 20px;
@@ -165,11 +205,15 @@
     height: 45px;
     border-radius: 26px;
     border: 2.5px solid var(--color-light);
+    transition: 0.3s all ease-out;
   }
   img {
     width: 22px;
   }
   i {
     font-size: 32px;
+  }
+  div:hover {
+    opacity: 0.6;
   }
 }

@@ -26,17 +26,17 @@ a {
 }
 .text-copy {
   cursor: pointer;
-  transition: 0.5s all;
+  transition: all 0.3s ease-out;
 }
 .text-copy:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .tel-hover {
   cursor: pointer;
-  transition: 0.5s all;
+  transition: all 0.3s ease-out;
 }
 .tel-hover:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 // RESET END
 

@@ -81,6 +81,23 @@
   font-size: var(--font-size-text);
   font-weight: 600;
 }
+.nav-items p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-items p:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-light);
+  transition: 0.3s all ease-in-out;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.nav-items a:hover p:after {
+  width: 100%;
+}
 
 .header-logo {
   width: 400px;
@@ -215,10 +232,14 @@
   padding: 20px 30px;
   cursor: pointer;
   background: var(--color-primary);
+  transition: 0.3s all ease-in-out;
 }
 .header-buttons .contact-me-button p {
   font-size: var(--font-size-button);
   font-weight: 600;
+}
+.header-buttons .contact-me-button:hover {
+  background: hsl(235, 98%, 69%);
 }
 .header-buttons .cv-download {
   padding: 20px 30px;
@@ -228,20 +249,35 @@
 .header-buttons .cv-download p {
   font-size: var(--font-size-button);
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 .header-buttons .cv-download i {
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.header-buttons .cv-download:hover p, .header-buttons .cv-download:hover i {
+  opacity: 0.6;
 }
 
 .social-buttons {
-  gap: 40px;
+  gap: 32px;
 }
 
 .arrow {
   width: 16px;
   height: 38px;
+  transition: 0.3s all ease-out;
+  animation: arrow 1s ease-in-out infinite alternate;
 }
 
+@keyframes arrow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
 .buttons {
   gap: 20px;
 }
@@ -250,12 +286,16 @@
   height: 45px;
   border-radius: 26px;
   border: 2.5px solid var(--color-light);
+  transition: 0.3s all ease-out;
 }
 .buttons img {
   width: 22px;
 }
 .buttons i {
   font-size: 32px;
+}
+.buttons div:hover {
+  opacity: 0.6;
 }
 
 .whoami-section {
@@ -463,6 +503,12 @@ footer {
   padding: 22px 0px;
   gap: 22px;
 }
+.footer-links .footer-container .nav-items a {
+  transition: all 0.3s ease-out;
+}
+.footer-links .footer-container .nav-items a:hover {
+  opacity: 0.6;
+}
 .footer-links .infos {
   gap: 16px;
 }
@@ -504,20 +550,20 @@ a {
 
 .text-copy {
   cursor: pointer;
-  transition: 0.5s all;
+  transition: all 0.3s ease-out;
 }
 
 .text-copy:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .tel-hover {
   cursor: pointer;
-  transition: 0.5s all;
+  transition: all 0.3s ease-out;
 }
 
 .tel-hover:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 ::-webkit-scrollbar {
