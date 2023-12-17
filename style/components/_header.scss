@@ -37,6 +37,7 @@
   height: 400px;
   border-radius: 400px;
   box-shadow: 0px 27px 75px 29px rgba(82, 96, 255, 0.22);
+  user-select: none;
 }
 .right-content {
   position: relative;
@@ -51,6 +52,7 @@
   width: 85px;
   height: 85px;
   position: absolute;
+  user-select: none;
 }
 .logo-figma {
   bottom: 39px;
@@ -151,6 +153,7 @@
     border-radius: 16px;
     padding: 20px 30px;
     cursor: pointer;
+    user-select: none;
     background: var(--color-primary);
     transition: 0.3s all ease-in-out;
     p {
@@ -165,6 +168,7 @@
     padding: 20px 30px;
     gap: 16px;
     cursor: pointer;
+    user-select: none;
     p {
       font-size: var(--font-size-button);
       font-weight: 600;
@@ -183,6 +187,7 @@
 }
 .social-buttons {
   gap: 32px;
+  user-select: none;
 }
 .arrow {
   width: 16px;
