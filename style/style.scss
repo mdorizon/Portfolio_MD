@@ -275,6 +275,11 @@ a {
       padding: var(--space-md);
     }
   }
+  .burger-nav-items {
+    .burger-nav-item {
+      font-size: 0.875rem;
+    }
+  }
   .header-content {
     padding: var(--space-8xl) 0;
     .container {
@@ -335,6 +340,7 @@ a {
         }
         .header-text p {
           font-size: 0.5rem;
+          padding: 0 16px;
         }
         .header-buttons {
           gap: 30px;
@@ -446,6 +452,7 @@ a {
     margin: 0 32px;
     .cards-container {
       max-width: 100%;
+      align-items: center;
       .sort-buttons {
         gap: 8px;
         .sort-button {
@@ -460,6 +467,7 @@ a {
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 24px 24px;
         .card {
+          max-width: 370px;
           .card-image {
             max-height: 200px;
             min-height: 200px;
@@ -539,9 +547,3 @@ a {
   }
 }
 // Tablet responsive END
-
-// Mobile responsive
-@media only screen and (max-width: 425px){
-
-}
-// Mobile responsive END

@@ -323,7 +323,7 @@
 }
 
 .sidenav {
-  height: 40%;
+  height: 24%;
   width: 200px;
   border-radius: 0 0 10px 0;
   position: fixed;
@@ -352,8 +352,8 @@
 
 .sidenav .close {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -8px;
+  right: 6px;
   font-size: 36px;
 }
 
@@ -382,6 +382,7 @@
   max-width: var(--space-sectionSmallMaxWidth);
   width: 100%;
   gap: 32px;
+  align-items: start;
 }
 
 .sort-buttons {
@@ -884,6 +885,9 @@ a {
   .navbar .nav-items {
     padding: var(--space-md);
   }
+  .burger-nav-items .burger-nav-item {
+    font-size: 0.875rem;
+  }
   .header-content {
     padding: var(--space-8xl) 0;
   }
@@ -943,6 +947,7 @@ a {
   }
   .header-content .container .left-content .header-text p {
     font-size: 0.5rem;
+    padding: 0 16px;
   }
   .header-content .container .left-content .header-buttons {
     gap: 30px;
@@ -1052,6 +1057,7 @@ a {
   }
   .projects-section .cards-container {
     max-width: 100%;
+    align-items: center;
   }
   .projects-section .cards-container .sort-buttons {
     gap: 8px;
@@ -1066,6 +1072,9 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 24px 24px;
+  }
+  .projects-section .cards-container .cards .card {
+    max-width: 370px;
   }
   .projects-section .cards-container .cards .card .card-image {
     max-height: 200px;
