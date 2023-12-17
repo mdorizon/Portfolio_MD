@@ -18,7 +18,7 @@ navItems.forEach((item) => {
   })
 })
 openBtn.addEventListener('click', () => {
-  sidenav.classList.add("active");
+  sidenav.classList.toggle("active");
 })
 closeBtn.addEventListener('click', () => {
   sidenav.classList.remove("active");
