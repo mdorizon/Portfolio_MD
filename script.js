@@ -7,6 +7,23 @@ textCopy.forEach((copy) => {
   })
 })
 
+// NAVMENU BURGER
+const sidenav = document.querySelector(".sidenav");
+const openBtn = document.querySelector("#openBtn");
+const closeBtn = document.querySelector("#closeBtn");
+const navItems = document.querySelectorAll('.burger-nav-item');
+navItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    sidenav.classList.remove("active");
+  })
+})
+openBtn.addEventListener('click', () => {
+  sidenav.classList.add("active");
+})
+closeBtn.addEventListener('click', () => {
+  sidenav.classList.remove("active");
+})
+
 // PROJECT SORTING
 const sortButtons = document.querySelectorAll('.sort-button');
 const cards = document.querySelectorAll('.card');

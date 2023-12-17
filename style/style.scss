@@ -259,7 +259,12 @@ a {
 
 // Tablet responsive
 @media only screen and (max-width: 768px){
-
+  .nav-item {
+    display: none;
+  }
+  .burger-icon {
+    display: unset;
+  }
 }
 // Tablet responsive END
 

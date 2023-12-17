@@ -222,3 +222,37 @@
     opacity: 0.6;
   }
 }
+.burger-icon {
+  display: none;
+}
+.sidenav {
+  height: 30%;
+  width: 200px;
+  border-radius: 0 0 10px 0;
+  position: fixed;
+  z-index: 1000;
+  opacity: 0.8;
+  top: 0;
+  left: -250px;
+  background-color: var(--color-grey-primary);
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color-light);
+  display: block;
+  transition: 0.3s;
+}
+.sidenav.active {
+  top: 0;
+  left: 0;
+}
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
