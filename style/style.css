@@ -394,7 +394,8 @@
 }
 .card .card-image {
   border-radius: 12px 12px 0 0;
-  height: 270px;
+  max-height: 270px;
+  min-height: 270px;
   width: 100%;
   z-index: 1;
   -webkit-user-select: none;
@@ -403,12 +404,19 @@
   background-size: cover;
 }
 .card .card-content {
+  height: 100%;
   padding: 32px 24px 24px 24px;
   gap: 24px;
   border-radius: 12px;
   z-index: 2;
   margin-top: -12px;
   background: var(--color-grey-primary);
+}
+.card .card-content .card-buttons-container {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  flex-direction: column;
 }
 .card .card-content .card-title-container {
   gap: 8px;
@@ -642,4 +650,180 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-grey-secondary);
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    gap: 96px;
+  }
+  .container {
+    flex-direction: column-reverse;
+    max-width: 700px;
+  }
+  .container .left-content {
+    align-items: center;
+    text-align: center;
+  }
+  .header-logo {
+    width: 350px;
+    height: 350px;
+  }
+  .nav-items a {
+    font-size: 0.625rem;
+  }
+  .figma-icon {
+    width: 20px;
+    height: 35px;
+  }
+  .sass-icon {
+    width: 44px;
+    height: 30px;
+  }
+  .tailwind-icon {
+    width: 39px;
+    height: 20px;
+  }
+  .vscode-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .logo-figma, .logo-tailwind, .logo-sass {
+    width: 60px;
+    height: 60px;
+  }
+  .logo-vscode {
+    width: 29px;
+    height: 29px;
+    bottom: 26px;
+    right: -10px;
+  }
+  .title-container h1 {
+    font-size: 2.125rem;
+  }
+  .title-container h2 {
+    font-size: 1.375rem;
+  }
+  .header-text p {
+    font-size: 0.625rem;
+    line-height: 16px;
+  }
+  .header-buttons .contact-me-button {
+    padding: 15px 25px;
+  }
+  .header-buttons .contact-me-button p {
+    font-size: 0.875rem;
+  }
+  .header-buttons .cv-download {
+    padding: 15px 25px;
+  }
+  .header-buttons .cv-download p, .header-buttons .cv-download i {
+    font-size: 0.625rem;
+  }
+  .social-buttons .linkedin-button {
+    width: 35px;
+    height: 35px;
+  }
+  .social-buttons .linkedin-button img {
+    width: 13px;
+  }
+  .social-buttons .github-button {
+    width: 35px;
+    height: 35px;
+  }
+  .social-buttons .github-button i {
+    font-size: 22px;
+  }
+  .social-buttons .dribbble-button {
+    width: 35px;
+    height: 35px;
+  }
+  .social-buttons .dribbble-button i {
+    font-size: 22px;
+  }
+  .social-buttons .arrow {
+    width: 11px;
+    height: 32px;
+  }
+  .whoami-text {
+    max-width: 700px;
+  }
+  .whoami-text h3 {
+    font-size: 1.125rem;
+  }
+  .whoami-text p {
+    font-size: 0.625rem;
+    line-height: 20px;
+  }
+  .cards-container {
+    max-width: 700px;
+  }
+  .sort-buttons {
+    gap: 12px;
+  }
+  .sort-buttons .sort-button {
+    padding: 6px 12px;
+  }
+  .sort-buttons .sort-button p {
+    font-size: 0.625rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px 24px;
+  }
+  .cards .card .card-content {
+    gap: 20px;
+  }
+  .cards .card .card-content h3 {
+    font-size: 1rem;
+  }
+  .cards .card .card-content p {
+    font-size: 0.625rem;
+  }
+  .cards .card .card-content .skill .skill-content img {
+    width: 14px;
+  }
+  .cards .card .card-content .skill .skill-content p {
+    font-size: 0.625rem;
+  }
+  .cards .card .card-links-container .project-button {
+    padding: 8px;
+  }
+  .cards .card .card-links-container .project-button img {
+    width: 16px;
+  }
+  .cards .card .card-links-container .more-button {
+    padding: 8px 12px;
+  }
+  .cards .card .category-tag p {
+    font-size: 0.625rem;
+  }
+  .skills-container {
+    max-width: 700px;
+  }
+  .skills-container .skills-title {
+    font-size: 1.125rem;
+  }
+  .skills-container .skills-cards .skill-content h3 {
+    font-size: 1.125rem;
+  }
+  footer .contact-container h3 {
+    font-size: 1.125rem;
+  }
+  footer .contact-container h1 {
+    font-size: 2rem;
+  }
+  footer .footer-links {
+    padding: 22px 34px;
+  }
+  footer .footer-links .social-buttons {
+    padding-top: 22px;
+  }
+  footer .footer-links .infos p {
+    font-size: 12px;
+  }
+  footer .footer-links .footer-container .nav-items {
+    gap: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
