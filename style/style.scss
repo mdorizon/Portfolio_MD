@@ -259,11 +259,283 @@ a {
 
 // Tablet responsive
 @media only screen and (max-width: 768px){
+  body, main {
+    gap: 48px;
+  }
   .nav-item {
     display: none;
   }
   .burger-icon {
     display: unset;
+  }
+  .navbar {
+    justify-content: flex-end;
+    width: 100%;
+    .nav-items {
+      padding: var(--space-md);
+    }
+  }
+  .header-content {
+    padding: var(--space-8xl) 0;
+    .container {
+      max-width: 100%;
+      width: 100%;
+      .right-content {
+        .header-logo {
+          width: 250px;
+          height: 250px;
+          box-shadow: 0px 17px 25px 19px rgba(82, 96, 255, 0.10)
+        }
+        .logo-figma, .logo-sass, .logo-tailwind {
+          width: 40px;
+          height: 40px;
+          .figma-icon {
+            width: 15px;
+            height: 30px;
+          }
+          .sass-icon {
+            width: 34px;
+            height: 20px;
+          }
+          .tailwind-icon {
+            width: 34px;
+            height: 15px;
+          }
+        }
+        .logo-figma {
+          animation: floatFigma 2.5s ease-in-out infinite alternate;
+        }
+        .logo-sass {
+          animation: floatSass 3s ease-in-out infinite alternate;
+        }
+        .logo-tailwind {
+          animation: floatTailwind 3.5s ease-in-out infinite alternate;
+        }
+        .logo-vscode {
+          width: 19px;
+          height: 19px;
+          bottom: 33px;
+          right: -3px;
+          animation: floatVscode 3.5s ease-in-out infinite alternate;
+          .vscode-icon {
+            width: 9px;
+            height: 9px;
+          }
+        }
+      }
+      .left-content {
+        gap: 40px;
+        .title-container {
+          h2 {
+            font-size: 1.125rem;
+          }
+          h1 {
+            font-size: 1.625rem;
+          }
+        }
+        .header-text p {
+          font-size: 0.5rem;
+        }
+        .header-buttons {
+          gap: 30px;
+          .contact-me-button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            p {
+              font-size: 0.625rem;
+            }
+          }
+          .cv-download {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+  @keyframes floatFigma {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-4px, 4px);
+    }
+  }
+  @keyframes floatTailwind {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(4px, 4px);
+    }
+  }
+  @keyframes floatSass {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(4px, -4px);
+    }
+  }
+  @keyframes floatVscode {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(3px, 9px);
+    }
+  }
+  .arrow {
+    animation: arrow 1.5s ease-in-out infinite alternate;
+  }
+  @keyframes arrow {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+  .social-buttons {
+    .buttons {
+      gap: 12px;
+    }
+    gap: 16px;
+    .linkedin-button {
+      width: 25px;
+      height: 25px;
+      border: 1.5px solid var(--color-light);
+      img {
+        width: 10px;
+      }
+    }
+    .github-button {
+      width: 25px;
+      height: 25px;
+      border: 1.5px solid var(--color-light);
+      i {
+        font-size: 16px;
+      }
+    }
+    .dribbble-button {
+      width: 25px;
+      height: 25px;
+      border: 1.5px solid var(--color-light);
+      i {
+        font-size: 16px;
+      }
+    }
+    .arrow {
+      width: 11px;
+      height: 26px;
+    }
+  }
+  .whoami-section {
+    gap: 64px;
+    .whoami-text {
+      max-width: 100%;
+      padding: 0 16px;
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .projects-section {
+    margin: 0 32px;
+    .cards-container {
+      max-width: 100%;
+      .sort-buttons {
+        gap: 8px;
+        .sort-button {
+          padding: 4px 10px;
+          p {
+            font-size: 0.5rem;
+          }
+        }
+      }
+      .cards {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 24px 24px;
+        .card {
+          .card-image {
+            max-height: 200px;
+            min-height: 200px;
+          }
+          .category-tag {
+            padding: 3px 10px;
+            top: 177px;
+          }
+          .card-content {
+            gap: 16px;
+            padding: 24px 16px 16px 22px;
+            .card-buttons-container {
+              gap: 12px;
+            }
+            .card-skills-container .skill {
+              padding: 6px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .skills-container {
+    .skills-title {
+      font-size: 1rem;
+    }
+    .skills-cards {
+      gap: 16px;
+      .skill-card {
+        .skill-content {
+          gap: 12px;
+          h3 {
+            font-size: 0.875rem;
+          }
+          li {
+            font-size: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    gap: 48px;
+    .contact-container {
+      h3 {
+        font-size: 0.875rem;
+      }
+      h1 {
+        font-size: 1.375rem;
+      }
+    }
+    .footer-links {
+      padding: 14px 18px;
+      .footer-container {
+        max-width: 100%;
+        .nav-items {
+          gap: 12px;
+          padding: 16px 0px;
+          a {
+            font-size: 0.5rem;
+          }
+        }
+        .infos {
+          gap: 8px;
+          p {
+            font-size: 8px;
+          }
+          .social-buttons {
+            padding-top: 16px;
+            .buttons {
+              gap: 8px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 // Tablet responsive END
