@@ -323,7 +323,8 @@
 }
 
 .sidenav {
-  height: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 200px;
   border-radius: 0 0 10px 0;
   position: fixed;
@@ -343,6 +344,7 @@
   color: var(--color-light);
   display: block;
   transition: 0.3s;
+  margin-bottom: 16px;
 }
 
 .sidenav.active {
