@@ -27,6 +27,10 @@
   flex-direction: column;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 :root {
   --color-primary: #5260FF;
   --color-secondary: #939BF6;
