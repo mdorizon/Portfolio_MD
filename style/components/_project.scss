@@ -46,6 +46,33 @@
     background-image: url(../../src/images/real_customer.png);
   }
 }
+#portfolio {
+  .card-image {
+    background-image: url(../../src/images/portfolio.png);
+    background-position: bottom;
+  }
+}
+#music-dashboard {
+  .card-image {
+    background-image: url(../../src/images/Music-Dashboard.png);
+  }
+}
+#vanezia {
+  .card-image {
+    background-image: url(../../src/images/vanezia.png);
+    background-position: bottom;
+  }
+}
+#blog-php {
+  .card-image {
+    background-image: url(../../src/images/Music-Dashboard.png);
+  }
+}
+#forum-php {
+  .card-image {
+    background-image: url(../../src/images/Music-Dashboard.png);
+  }
+}
 .card {
   min-width: 270px;
   gap: -12px;

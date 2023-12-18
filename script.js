@@ -68,6 +68,22 @@ sortButtons.forEach((button) => {
           }
         })
         break;
+      case 'php':
+        cards.forEach((card) => {
+          card.classList.remove('d-none');
+          if (!card.classList.contains('php')) {
+            card.classList.add('d-none')
+          }
+        })
+        break;
+      case 'perso':
+      cards.forEach((card) => {
+        card.classList.remove('d-none');
+        if (!card.classList.contains('perso')) {
+          card.classList.add('d-none')
+        }
+      })
+      break;
     }
   })
 })
