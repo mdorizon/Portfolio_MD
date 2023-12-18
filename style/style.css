@@ -444,12 +444,9 @@
   background-position: bottom;
 }
 
-#blog-php .card-image {
-  background-image: url(../../src/images/Music-Dashboard.png);
-}
-
 #forum-php .card-image {
-  background-image: url(../../src/images/Music-Dashboard.png);
+  background-image: url(../../src/images/forum-php.png);
+  background-position: bottom;
 }
 
 .card {
